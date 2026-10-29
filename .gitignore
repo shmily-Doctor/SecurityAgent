@@ -1,0 +1,31 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 测试与缓存 ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- IDE ----
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# ---- 运行产物 ----
+reports/
+*.log
+bandit_report.json
+self_bandit_tmp.json
+
+# ---- 本地备份（修复/改写前的回滚副本）----
+*.bak
+*.orig_bak
+*_backup.txt
+
+# ---- 第三方发行包：体积大，按需下载，不入库 ----
+vendor/nmap/

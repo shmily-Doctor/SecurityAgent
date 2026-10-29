@@ -1,0 +1,8 @@
+# SecurityAgent 运行依赖
+# 安装：.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+openai-agents==0.23.1      # Agent 框架（function_tool / Runner / RunHooks）
+openai==3.28.0             # AsyncOpenAI 兼容客户端（百炼 / DeepSeek / OpenAI）
+
+bandit==1.9.4              # 静态扫描：bandit_tool / project_scan_tool 以子进程调用
+pytest==9.1.1              # 测试：test_tool.py 以子进程调用
